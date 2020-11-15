@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/Buscador")
-public class GithubBuscadorController {
+@RequestMapping("/")
+public class GithubController {
 
-    @GetMapping()
-    public ResponseEntity listarRepositorios(){
+    @GetMapping(value = "/list", consumes = "application/json", produces = "*/*")
+    public ResponseEntity indexUsingPOST(){
         return null;
     }
 }
