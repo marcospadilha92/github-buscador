@@ -22,6 +22,5 @@ public class RepositorySummary {
     private String name;
     @JsonProperty("updated_at")
     private String updatedAt;
-
     private Owner owner;
 }

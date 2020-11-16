@@ -1,6 +1,6 @@
 package com.marcos.githubbuscador.config;
 
-import com.marcos.githubbuscador.security.JWTAuthenticationFilter;
+import com.marcos.githubbuscador.security.JwtAuthenticationFilter;
 import com.marcos.githubbuscador.security.JwtFilter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -26,7 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterBefore(new JwtFilter("/auth", authenticationManager()),
                         UsernamePasswordAuthenticationFilter.class)
 
-                .addFilterBefore(new JWTAuthenticationFilter(),
+                .addFilterBefore(new JwtAuthenticationFilter(),
                         UsernamePasswordAuthenticationFilter.class);
     }
 
