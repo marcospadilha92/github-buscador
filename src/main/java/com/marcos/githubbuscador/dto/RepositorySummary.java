@@ -11,16 +11,17 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RepositorySummary {
-    private boolean _private;
-    @JsonProperty("create_at")
+    @JsonProperty("private")
+    private Boolean _private;
+    @JsonProperty("created_at")
     private String createdAt;
     private String description;
     @JsonProperty("full_name")
     private String fullName;
-    private String type;
     private String language;
     private String name;
-    private String owner;
     @JsonProperty("updated_at")
     private String updatedAt;
+
+    private Owner owner;
 }

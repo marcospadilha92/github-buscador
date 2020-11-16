@@ -2,6 +2,9 @@ package com.marcos.githubbuscador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class GitHubBuscadorApplication {
@@ -9,5 +12,4 @@ public class GitHubBuscadorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GitHubBuscadorApplication.class, args);
 	}
-
 }
